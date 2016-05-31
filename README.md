@@ -1,10 +1,9 @@
 # Mac Build (using Ansible)
 *Automating OS X setup from the ground up*
 
-![](images/osx-yosemite-logo.png)
+![](images/osx-el_capitan-logo.png)
 
-The goal of this project is fully automate my OS X Yosemite workstation using
-Ansible.  I have currently implemented the following:
+The goal of this fork is fully automate my OS X El Capital workstation using Ansible.  I have currently implemented the following (I am currently reviewing and timing back the functionality):
 
 * **OS X Defaults**: Updating of plist properties for various aspects of OS X 
   such as enabling zoom, configuring Finder and so on.  This uses a custom
