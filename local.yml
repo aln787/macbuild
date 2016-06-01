@@ -11,10 +11,10 @@
     - global
     # Software Installation & Configuration
     - software
-    - defaults
+    #- defaults
     - files
     # Unix Software
-    - python
+    #- python
     - ruby
     - nodejs
     - sublimetext
