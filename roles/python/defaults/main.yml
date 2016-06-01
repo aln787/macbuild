@@ -1,7 +1,8 @@
 ---
 python_packages:
-  - ipython
-  - powerline-status
   - pip
   - setuptools
   - virtualenv
+  #https://jupyter.org/
+  # - ipython
+  # - powerline-status

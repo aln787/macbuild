@@ -1,5 +1,5 @@
 # Shortcut Aliases
-alias ll='ls -l'
+alias ll='ls -lah'
 
 # Set the default editor to Sublime Text
 export EDITOR='subl -w'
@@ -23,5 +23,5 @@ source "${powerline_path}/bindings/bash/powerline.sh"
 eval "$(rbenv init -)"
 
 # Setup go
-export GOPATH=/usr/local/lib/go
-export PATH=$PATH:$GOPATH/bin
+# export GOPATH=/usr/local/lib/go
+# export PATH=$PATH:$GOPATH/bin

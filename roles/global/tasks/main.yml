@@ -50,5 +50,8 @@
 - name: create the development folder
   file: path="{{ development_dir }}" state=directory
 
+- name: create the Jenkins home directory
+  file: path"{{ jenkins_home_dir }}" state=directory
+
 - name: create the screenshots folder
   file: path=~/Pictures/Screenshots state=directory

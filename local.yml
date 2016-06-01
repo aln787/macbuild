@@ -3,11 +3,9 @@
   connection: local
   vars:
     # Set our development directory
-    development_dir: '~/Documents/Development'
+    development_dir: '~/Development'
+    jenkins_home_dir: '~/jenkins'
 
-    # Set our cloud application configuration and license root directories
-    cloud_app_config_dir: '~/Google Drive/Software Settings'
-    cloud_app_license_dir: '~/Google Drive/Software Licenses'
   roles:
     # System Configuration
     - global
@@ -16,13 +14,9 @@
     - defaults
     - files
     # Unix Software
-    - vim
     - python
     - ruby
-    - go
-    - vagrant
     - nodejs
-    # Desktop Applications
-    - spotify
     - sublimetext
-    - docker
+    - vim
+    ##Additional options from the original fork (go, vagrant, docker)

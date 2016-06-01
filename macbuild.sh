@@ -15,11 +15,26 @@ then
     read -r
 fi
 
+if ! fastlane --version > /dev/null 2>&1
+then
+    echo "Installing Fastlane"
+    gem install fastlane --verbose
+    xcode-select --install
+    gem cleanup
+fi
+
 # Install Python
-if ! brew list ansible > /dev/null 2>&1
+if ! brew list python > /dev/null 2>&1
+then
+    echo "Installing Python 2.x"
+    brew install python
+fi
+
+# Install Ansible (using pip is the officially supported way)
+if ! pip2 show ansible > /dev/null 2>&1
 then
     echo "Installing Ansible"
-    brew install ansible
+    pip2 install ansible
 fi
 
 # Install biplist to allow manipulation of plist files
@@ -30,7 +45,7 @@ then
 fi
 
 # Perform the build
-#ansible-playbook -i localhost, local.yml
+ansible-playbook -i localhost, local.yml
 
 # Set Terminal settings
 ./terminal.js
