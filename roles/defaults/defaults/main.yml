@@ -1,45 +1,7 @@
 ---
-# Set various defaults which will updat the relevant plist files
+# Set various defaults which will update the relevant plist files
 osapp_defaults:
   # --- OS X ---
-
-  # System Preferences & Globals
-  - domain: Apple Global Domain
-    values:
-      # General / Appearance / Use dark menu bar and Dock
-      AppleInterfaceStyle: Dark
-      # Keyboard / Keyboard / Key Repeat
-      KeyRepeat: 2
-      # Keyboard / Keyboard / Delay Until Repeat
-      InitialKeyRepeat: 25
-      # Keyboard / Keyboard / Use all F1, F2, etc. keys as standard function keys
-      com.apple.keyboard.fnState: true
-      # Keyboard / Text / Correct spelling automatically
-      NSAutomaticSpellingCorrectionEnabled: false
-      # Keyboard / Text / Use smart quotes and dashes
-      NSAutomaticQuoteSubstitutionEnabled: false
-      NSAutomaticDashSubstitutionEnabled: false
-      # Keyboard / Shortcuts / Full Keyboard Access / All controls
-      AppleKeyboardUIMode: 3
-      # Mouse / Point & Click / Tracking
-      com.apple.mouse.scaling: 1.0
-
-      # Enable subpixel font rendering on non-Apple LCDs
-      AppleFontSmoothing: 2
-      # Expand the save panel by default
-      NSNavPanelExpandedStateForSaveMode: true
-      NSNavPanelExpandedStateForSaveMode2: true
-      # Disable the character accent menu when holding down a key
-      ApplePressAndHoldEnabled: false
-
-  # System Preferences / Accessibility
-  - domain: com.apple.universalaccess
-    values:
-      # Zoom / Use scroll gesture with modifier keys to zoom
-      closeViewScrollWheelToggle: true
-      # Display / Cursor size
-      mouseDriverCursorSize: 1.25
-
   # Launch Services
   - domain: com.apple.LaunchServices
     values:
@@ -76,61 +38,9 @@ osapp_defaults:
       # Open Date & Time Preferences... / Clock / Show date
       DateFormat: "EEE d MMM  h:mm a"
 
-  # Symbolic Hot Keys
-  # - domain: com.apple.symbolichotkeys
-  #   values:
-  #     # Disable slow motion effects
-  #     # (http://apple.stackexchange.com/questions/66433)
-  #     AppleSymbolicHotKeys:
-  #       34: { enabled: 0 }
-  #       35: { enabled: 0 }
-  #       37: { enabled: 0 }
-
-  # Screen Capture
-  # - domain: com.apple.screencapture
-  #   values:
-  #     location: ~/Pictures/Screenshots
-
   # --- Apple Software ---
-
   # Safari
   - domain: com.apple.Safari
     values:
       # View / Show Status Bar
       ShowStatusBar: true
-
-  # --- 3rd Party Software ---
-  # MacDown
-  # - domain: com.uranusjr.macdown
-  #   values:
-  #     firstVersionInstalled: '749'
-  #     SUEnableAutomaticChecks: true
-  #     # General
-  #     editorSyncScrolling: true
-  #     # Markdown
-  #     extensionTables: true
-  #     extensionFencedCode: true
-  #     extensionIntraEmphasis: true
-  #     extensionStrikethough: true
-  #     extensionAutolink: true
-  #     # Editor
-  #     editorBaseFontInfo:
-  #       name: SourceCodePro-Regular
-  #       size: 16.0
-  #     editorStyleName: Solarized (Dark)
-  #     editorLineSpacing: 2.0
-  #     editorHorizontalInset: 15.0
-  #     editorVerticalInset: 15.0
-  #     editorMaximumWidth: 800.0
-  #     editorConvertTabs: true
-  #     editorCompleteMatchingCharacters: true
-  #     editorInsertPrefixInBlock: true
-  #     editorEnsuresNewlineAtEndOfFile: true
-  #     editorAutoIncrementNumberedLists: true
-
-  #     # Rendering
-  #     htmlStyleName: GitHub2
-  #     htmlSyntaxHighlighting: true
-  #     htmlTaskList: true
-  #     htmlDetectFrontMatter: true
-  #     htmlDefaultDirectoryUrl: "{{ development_dir }}"
