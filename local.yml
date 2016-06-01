@@ -2,9 +2,9 @@
 - hosts: localhost
   connection: local
   vars:
-    # Set our development directory
     development_dir: '~/Development'
     jenkins_home_dir: '~/jenkins'
+    user: 'tools' 
 
   roles:
     # System Configuration
